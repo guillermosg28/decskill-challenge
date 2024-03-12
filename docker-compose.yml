@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  decskill-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "9292:9292"
+    container_name: decskill-app
+    networks:
+      - decskill-network
+
+networks:
+  decskill-network:

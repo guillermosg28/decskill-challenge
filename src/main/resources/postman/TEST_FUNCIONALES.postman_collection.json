@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "e3c0c867-2e68-4b70-abb7-5db854d66f12",
+		"name": "CHALLENGE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2809472",
+		"_collection_link": "https://www.postman.com/warped-station-37706/workspace/decskill/collection/2809472-e3c0c867-2e68-4b70-abb7-5db854d66f12?action=share&source=collection_link&creator=2809472"
+	},
+	"item": [
+		{
+			"name": "test01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-14 10:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-14 10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test02",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-14 16:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-14 16:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test03",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-14 21:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-14 21:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test04",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-15 10:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-15 10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test05",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-16 21:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-16 21:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "priceNotFound",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices?fecha=2020-06-16 21:00:00&productId=35455&brandId=3",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2020-06-16 21:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requiredParameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CHALLENGE_API_URL}}/api/v1/prices",
+					"host": [
+						"{{CHALLENGE_API_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prices"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
